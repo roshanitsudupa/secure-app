@@ -1,5 +1,4 @@
 name: Weather App Production Check
-
 on:
   push:
     branches: [ main ]
@@ -10,11 +9,10 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: false
       matrix:
         node-version: [18.x, 20.x]
-
-    steps:
+    
+    steps: # This must align vertically with 'strategy' and 'runs-on'
       - name: Checkout Code
         uses: actions/checkout@v4
 
@@ -38,8 +36,7 @@ jobs:
     needs: build-and-test
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
       
       - name: Create Build Artifact
         run: zip -r weather-app-dist.zip . -x "*.git*"
