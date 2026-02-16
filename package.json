@@ -1,0 +1,21 @@
+{
+  "name": "secure-app",
+  "version": "1.0.0",
+  "description": "use github secrets and actions.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roshanitsudupa/secure-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/roshanitsudupa/secure-app/issues"
+  },
+  "homepage": "https://github.com/roshanitsudupa/secure-app#readme"
+}
